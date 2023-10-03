@@ -55,7 +55,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #fff;
   text-align: left;
   background-color: #fff; }
 
@@ -464,7 +464,10 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
-
+  @media (min-width: 1600px){
+  .container {
+      max-width: 1700px;
+  } }
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -5431,7 +5434,7 @@ button.bg-dark:focus {
   border-bottom: 1px solid #dee2e6 !important; }
 
 .border-left {
-  border-left: 1px solid #dee2e6 !important; }
+  border-left: 3px solid #dee2e6 !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -8205,41 +8208,54 @@ textarea.form-control {
     margin-bottom: 0; }
 
 footer {
-  padding: 5em 0; }
+  padding: 5em 0 1em 0; }
 
 .footer-02 {
-  background: #131719; }
-  .footer-02 .footer-heading {
-    font-size: 19px;
+  background: #28B1A6; 
+font-size: 18px;}
+  .footer-02 .footer-headings {
+    font-size: 36px;
     color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+
+        text-decoration-thickness: 3px;
     margin-bottom: 20px; }
     .footer-02 .footer-heading .logo {
       color: #fff;
-      text-transform: uppercase; }
+    font-size: 48px; }
   .footer-02 a {
-    color: #bba387; }
+    color: #fff; }
   .footer-02 p {
-    color: rgba(255, 255, 255, 0.3); }
-  .footer-02 .copyright {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 14px; }
+    color: #fff; }
+  .after-footer .copyright {
+    color: #6A6A6A;;
+    font-size: 20px; }
+    .after-footer .list-unstyled li a {
+    color: #6A6A6A; }
+    .after-footer .list-unstyled li a:hover {
+      color: #28B1A6; }
+  .after-footer .list-unstyled a {
+    color: #6A6A6A; }
+    .after-footer .list-unstyled a:hover {
+      color: #28B1A6; }
   .footer-02 .list-unstyled li a {
-    color: rgba(255, 255, 255, 0.4); }
+    color: #fff; }
     .footer-02 .list-unstyled li a:hover {
       color: #fff; }
   .footer-02 .list-unstyled a {
-    color: rgba(255, 255, 255, 0.4); }
+    color: #fff; }
     .footer-02 .list-unstyled a:hover {
       color: #fff; }
   .footer-02 .subscribe {
     margin-top: -105px; }
   .footer-02 .subscribe-form {
     border-radius: 40px;
+    border: 3px solid #407C87;
     background: #fff;
     padding: 3px;
-    -webkit-box-shadow: 0px -12px 21px -15px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px -12px 21px -15px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px -12px 21px -15px rgba(0, 0, 0, 0.1); }
+    -webkit-box-shadow: 0px -12px 21px -15px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px -12px 21px -15px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.9); }
     .footer-02 .subscribe-form .form-group {
       position: relative;
       margin-bottom: 0;
@@ -8248,8 +8264,8 @@ footer {
         background: transparent !important;
         border: none !important;
         outline: none !important;
-        color: rgba(0, 0, 0, 0.3) !important;
-        font-size: 16px;
+        color: rgba(0, 0, 0, 1) !important;
+        font-size: 24px;
         height: 56px;
         border-radius: 0; }
         .footer-02 .subscribe-form .form-group input::-webkit-input-placeholder {
@@ -8269,12 +8285,14 @@ footer {
           -webkit-box-shadow: none;
           box-shadow: none; }
       .footer-02 .subscribe-form .form-group .submit {
-        color: #fff !important;
+        
+        color: #000 !important;
         display: block;
-        width: 150px;
+        width: 300px;
         height: 56px;
-        font-size: 14px;
-        background: #bfa88e !important;
+        line-height: 40px;
+        font-size: 22px;
+        background: #A5DBDD !important;
         border: none;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -8299,7 +8317,7 @@ footer {
     .footer-02 .partner-wrap .btn-custom {
       font-size: 14px; }
   .footer-02 .border-left {
-    border-color: rgba(255, 255, 255, 0.05) !important; }
+    border-color: rgba(255, 255, 255, 0.8) !important;}
     @media (max-width: 1199.98px) {
       .footer-02 .border-left {
         border: none; } }

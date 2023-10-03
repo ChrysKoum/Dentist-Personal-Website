@@ -25,3 +25,22 @@
     width: 40px;
     height: auto;
 }
+
+.after-footer {
+    background-color: #D3E1E2 ;
+}
+
+.book-button{
+        color: #fff !important;
+        display: block;
+        width: 220px;
+        height: 56px;
+        line-height: 40px;
+        font-size: 22px;
+        background: #30D5C7 !important;
+        border: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: 40px; 
+}
+
