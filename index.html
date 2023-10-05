@@ -11,16 +11,112 @@
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/style-boostrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icomoon/style.css">
 </head>
 
 <body>
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <h2>Footer #02</h2>
-                </div>
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
             </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-6 col-xl-2">
+                    <a href="index.html"><img class="logo-img" src="assets/logo/logo.png" alt="logo icon"></a>
+                </div>
+
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li class="has-children"><a href="#home-section" class="nav-link">ΥΠΗΡΕΣΙΕΣ</a>
+                                <ul class="dropdown">
+                                    <li><a href="#team-section" class="nav-link">ΑΙΣΘΗΤΙΚΗ ΟΔΟΝΤΙΑΤΡΙΚΗ</a></li>
+                                    <li><a href="#pricing-section" class="nav-link">ΓΕΝΙΚΗ ΟΔΟΝΤΙΑΤΡΙΚΗ</a></li>
+                                    <li><a href="#faq-section" class="nav-link">ΧΕΙΡΟΥΡΓΙΚΗ ΣΤΟΜΑΤΟΣ</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#about-section" class="nav-link">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a>
+                                <ul class="dropdown">
+                                    <li><a href="#team-section" class="nav-link">ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΕΜΑΣ</a></li>
+                                    <li><a href="#pricing-section" class="nav-link">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact-section" class="nav-link">ΤΟΠΟΘΕΣΙΕΣ</a></li>
+                            <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                            <li><a href="#contact-section" class="nav-link">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                            <li><a href="#contact-section" id="book-button-nav" class="nav-link btn btn-lg">ΚΡΑΤΗΣΗ
+                                    ΤΩΡΑ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
+                        href="#" class="site-menu-toggle js-menu-toggle float-right"><span
+                            class="icon-menu h3"></span></a></div>
+
+            </div>
+        </div>
+
+    </header>
+    <div style="padding: 200px;"></div>
+    <section class="testimonials">
+        <h1 class="mb-6 py-5 text-center" style="color: black; background-color: #D3E1E2;">Είστε σε Καλά Χέρια</h1>
+        <div class="carousel-container">
+            <div class="carousel-card" id="far-left">
+                <p class="carousel-text">Η κ. Μπόμπου με έκανε να ανακτήσω την εμπιστοσύνη μου στους οδοντιάτρους.
+                    Ο επαγγελματισμός και η φροντίδα της είναι αξεπέραστή. Δεν θα άλλαζα ιατρείο για κανένα λόγο!</p>
+                <hr class="separator mt-4 mb-4">
+                <span class="reviewer-name">Νίκος Λ.</span>
+            </div>
+            <div class="carousel-card" id="left">
+                <!-- No change here. It remains as you provided. -->
+                <p class="carousel-text">Στην κ. Μπόμπου αισθάνομαι σίγουρος. Είναι εξαιρετική στη δουλειά της και πάντα
+                    με
+                    βοηθάει να νιώθω άνετα. Αξίζει να την
+                    επισκεφτείτε!</p>
+                <hr class="separator mt-5 mb-4">
+                <span class="reviewer-name">Μαρία Κ.</span>
+            </div>
+            <div class="carousel-card" id="center">
+                <!-- No change here. It remains as you provided. -->
+                <p class="carousel-text">Η κ. Μπόμπου είναι επαγγελματίας με ακεραιότητα. Το ιατρείο της είναι η πρώτη
+                    μου
+                    επιλογή για οδοντιατρική φροντίδα. Την
+                    προτείνω ανεπιφύλακτα!</p>
+                <hr class="separator mt-5 mb-4">
+                <span class="reviewer-name">Έλενα Π.</span>
+            </div>
+            <div class="carousel-card" id="right">
+                <!-- No change here. It remains as you provided. -->
+                <p class="carousel-text">Η κ. Μπόμπου είναι τόσο επαγγελματίας και ευγενική. Με κάνει να αισθάνομαι σαν
+                    στο
+                    σπίτι μου. Σίγουρα η καλύτερη
+                    οδοντίατρος που επισκέφτηκα!</p>
+                <hr class="separator mt-5 mb-4">
+                <span class="reviewer-name">Κώστας Β.</span>
+            </div>
+            <div class="carousel-card" id="far-right">
+                <p class="carousel-text">Η εμπειρία μου με την κ. Μπόμπου ήταν εξαιρετική. Η γνώση και η τεχνόγωσία της
+                    είναι
+                    κορυφαία.
+                    Με έκανε να νιώσω ότι είμαι σε ασφαλή χέρια!</p>
+                <hr class="separator mt-5 mb-4">
+                <span class="reviewer-name">Δημήτρης Γ.</span>
+            </div>
+
         </div>
     </section>
     <footer class="footer-02">
@@ -38,8 +134,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row main-footer">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="row">
                         <div class="col-md-12 mb-md-0 mb-4">
                             <h2 class="footer-heading mt-1"><a href="#" class="logo">MyDentalCare</a></h2>
@@ -64,28 +160,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 border-left">
+                <div class="col-12 col-md-6 col-lg-3 border-left">
                     <h2 class="footer-headings mt-3">Επικοινωνία</h2>
                     <div class="row  mb-4">
-                        <div class="col-1 ">
-                            <img class="footer-icon" src="assets/footer icon/email.png" alt="email icon">
-                        </div>
-                        <div class="col-11 mt-1">
-                            <span><a href="mailto:pennybompou@gmail.com">pennybompou@gmail.com</a></span>
-                        </div>
+                        <img class="footer-icon mx-2" src="assets/footer icon/email.png" alt="email icon">
+                        <span><a href="mailto:pennybompou@gmail.com">pennybompou@gmail.com</a></span>
                     </div>
                     <div class="row">
-                        <div class="col-1">
-                            <img class="footer-icon" src="assets/footer icon/phone-call.png" alt="phone call icon">
-                        </div>
-                        <div class="col-11 mt-2">
-                            <span><a href="tel:6980381057">6980381057</a> | <a
-                                    href="tel:2107750882">210-7750882</a></span>
-                        </div>
+                        <img class="footer-icon mx-2" src="assets/footer icon/phone-call.png" alt="phone call icon">
+
+                        <span><a href="tel:6980381057">6980381057</a> | <a href="tel:2107750882">210-7750882</a></span>
                     </div>
                 </div>
 
-                <div class="col-2 ">
+                <div class="col-12 col-md-6 col-lg-2 ">
                     <h2 class="footer-headings mt-3">Βοήθεια</h2>
                     <ul class="list-unstyled">
                         <li><a href="#" class="py-1 d-block">Αρχική</a></li>
@@ -100,7 +188,7 @@
                     </ul>
                 </div>
 
-                <div class="col-3 ">
+                <div class="col-12 col-md-6 col-lg-3 ">
                     <h2 class="footer-headings mt-3">Social</h2>
                     <div>
                         <a href="#" class="py-1 pr-2"><img class="footer-icon" src="assets/footer icon/instagram.png"
@@ -110,7 +198,7 @@
                         <a href="https://www.linkedin.com/in/penny-bompou/?originalSubdomain=gr" class="py-1 px-2"><img
                                 class="footer-icon" src="assets/footer icon/linkedin.png" alt="instagram icon"></a>
                     </div>
-                    <a href="" class="book-button mt-5 btn btn-lg">ΚΡΑΤΗΣΗ ΤΩΡΑ</a>
+                    <a href="" class="book-button mt-5 mb-5 btn btn-lg">ΚΡΑΤΗΣΗ ΤΩΡΑ</a>
                 </div>
 
             </div>
@@ -135,6 +223,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
 </body>
 

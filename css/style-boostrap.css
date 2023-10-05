@@ -452,18 +452,13 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px; } }
+
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 1200px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+    max-width: 1453px;} }
   @media (min-width: 1600px){
   .container {
       max-width: 1700px;
@@ -6659,6 +6654,24 @@ button.bg-dark:focus {
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important; }
+.m-6 {
+  margin: 6rem !important; }
+
+.mt-6,
+.my-6 {
+  margin-top: 6rem !important; }
+
+.mr-6,
+.mx-6 {
+  margin-right: 6rem !important; }
+
+.mb-6,
+.my-6 {
+  margin-bottom: 6rem !important; }
+
+.ml-5,
+.mx-5 {
+  margin-left: 6rem !important; }
 
 .p-0 {
   padding: 0 !important; }
