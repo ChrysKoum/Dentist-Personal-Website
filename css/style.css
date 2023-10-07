@@ -319,8 +319,114 @@ a {
 
 
 
+/* ===================================================================
+ * # Video
+ * ------------------------------------------------------------------- */
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* or other dimensions */
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF; /* or any other color */
+    text-align: center;
+}
 
 
+.main-btn {
+    background-color: #30D5C7;
+    color: white;
+    border: none;
+    font-size: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #28bfa9;  /* A slightly darker shade for hover effect */
+}
+
+.call-text{
+  font-size: 1.75rem;
+}
+
+/* ===================================================================
+ * # Services
+ * ------------------------------------------------------------------- */
+
+.card {
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and transform */
+    padding: 10px; /* Adds padding around the card */
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adjusted shadow for a softer, more distant look */
+    transform: translateY(-5px); /* Slightly lifts the card */
+}
+
+
+/* ===================================================================
+ * # Why Us
+ * ------------------------------------------------------------------- */
+
+
+.counter-box {
+    height: 100px;
+    width: 400px;
+    background-color: #407C87;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;           /* Enables Flexbox */
+    align-items: center;     /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+}
+
+.p-why-us{
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+.box-why-us{
+  background: #D3E1E2;
+  border-radius: 20px;
+}
+
+.cv-button{
+    color: #000 !important;
+    display: block;
+    width: 183px;
+    height: 47px;
+    line-height: 9px;
+    font-size: 17px;
+    background: #30D5C7 ;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+.cv-button:hover{
+  background-color: #28bfa9;
+  color: #000;
+}
 
 /* ===================================================================
  * # Carousel
@@ -335,7 +441,7 @@ a {
   text-align: left;
   position: relative;
   height: 450px;
-  max-width: 1400px;
+  max-width: 1980px;
   min-width: 600px;
   margin: 0 auto;
 }
@@ -458,13 +564,16 @@ a {
     height: 47px;
     line-height: 9px;
     font-size: 17px;
-    background: #30D5C7 !important;
+    background: #30D5C7 ;
     border: none;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 12px;
 }
-
+#book-button-nav:hover{
+  background-color: #28bfa9;
+  color: #000;
+}
 @media (max-width: 767px) {
     .row.main-footer {
         display: flex;

@@ -1,5 +1,5 @@
 (function ($) {
-  "use strict";
+  ("use strict");
 
   // Code from the first script
   $('[data-toggle="tooltip"]').tooltip();
@@ -143,4 +143,9 @@
     });
   };
   siteMenuClone();
+  // Facts counter
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 2000,
+  });
 })(jQuery);
