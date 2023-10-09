@@ -463,6 +463,25 @@ pre {
   .container {
       max-width: 1700px;
   } }
+
+  .container-sm{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  
+  @media (min-width: 992px) {
+    .container-sm {
+      max-width: 1200px; } }
+  @media (min-width: 600px) {
+    .container-sm {
+    max-width: 800px;} }
+  @media (min-width: 1600px){
+  .container-sm {
+      max-width: 1000px;
+  } }
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;

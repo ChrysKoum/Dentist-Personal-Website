@@ -56,7 +56,11 @@ a {
         padding-left: 5px;
         padding-right: 5px; }
     .site-navbar .site-navigation .site-menu .has-children {
-      position: relative; }
+      position: relative;}
+      .site-navbar .site-navigation .site-menu .has-children .parent-a{
+      cursor: default; }
+      .site-navbar .site-navigation .site-menu .has-children .parent-a:hover {
+        color: #fff!important; }
       .site-navbar .site-navigation .site-menu .has-children > a {
         position: relative;
         padding-right: 20px; }
@@ -298,7 +302,7 @@ a {
     .sticky-wrapper .site-navbar .site-logo a {
       color: #fff; }
     .sticky-wrapper .site-navbar .site-menu > li > a {
-      color: #000;}
+      color: #fff;}
       .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
         color: #30D5C7 !important; }
   .sticky-wrapper.is-sticky .site-navbar {
@@ -426,6 +430,51 @@ a {
 .cv-button:hover{
   background-color: #28bfa9;
   color: #000;
+}
+/* ===================================================================
+ * # History
+ * ------------------------------------------------------------------- */
+.p-history{
+  font-weight: 500;
+  font-size: large;
+}
+/*--------------------------------------------------------------
+----------------------------------------------------------------
+# Contact Page
+----------------------------------------------------------------
+--------------------------------------------------------------*/
+
+.container-sm {
+  padding-top: 7rem;
+}
+#section-contact {
+  background-image: url("../assets/background_blur.png");
+}
+
+
+.box-contact{
+  background: #D3E1E2;
+  border-radius: 20px;
+  padding: 4rem 8rem;
+}
+#section-contact form input,
+#section-contact form textarea {
+  border-radius: 10px;
+  background-color: #EEF1F6;
+}
+
+#section-contact form button {
+    background-color: #407C87;
+    color: white;
+    border: none;
+    font-size: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#section-contact form button:hover{
+    background-color: #28bfa9;
+    color: white;
 }
 
 /* ===================================================================

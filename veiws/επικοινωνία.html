@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Παναγιώτα Μπόμπου οδοντίατρος</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/style-boostrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/icomoon/style.css">
+</head>
+
+<body>
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-6 col-xl-2">
+                    <a href="../index.html"><img class="logo-img" src="../assets/logo/logo.png" alt="logo icon"></a>
+                </div>
+
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li class="has-children"><a href="#services" class="nav-link parent-a"
+                                    onclick="event.preventDefault();">ΥΠΗΡΕΣΙΕΣ</a>
+                                <ul class="dropdown">
+                                    <li><a href="#team-section" class="nav-link">ΑΙΣΘΗΤΙΚΗ ΟΔΟΝΤΙΑΤΡΙΚΗ</a></li>
+                                    <li><a href="#pricing-section" class="nav-link">ΓΕΝΙΚΗ ΟΔΟΝΤΙΑΤΡΙΚΗ</a></li>
+                                    <li><a href="#faq-section" class="nav-link">ΧΕΙΡΟΥΡΓΙΚΗ ΣΤΟΜΑΤΟΣ</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#about-us" class="nav-link parent-a" onclick="event.preventDefault();">ΣΧΕΤΙΚΑ
+                                    ΜΕ ΕΜΑΣ</a>
+                                <ul class="dropdown">
+                                    <li><a href="#" class="nav-link">ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΕΜΑΣ</a>
+                                    </li>
+                                    <li><a href="#pricing-section" class="nav-link">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact-section" class="nav-link">ΤΟΠΟΘΕΣΙΕΣ</a></li>
+                            <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                            <li><a href="σχετικά-με-εμάς.html" class="nav-link">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                            <li><a href="#contact-section" id="book-button-nav" class="nav-link btn btn-lg">ΚΡΑΤΗΣΗ
+                                    ΤΩΡΑ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
+                        href="#" class="site-menu-toggle js-menu-toggle float-right"><span
+                            class="icon-menu h3"></span></a></div>
+            </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <section id="section-contact" class="bg-light pb-5">
+        <div class="container-sm">
+            <div class="box-contact">
+                <h1 class="text-center display-4 mb-5 font-weight-bold text-body">
+                    Επικοινωνήστε Μαζί μας</h1>
+                <form id=" contactForm" class="text-left" action="{{ url('/contact-mail')}}" method="post">
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Όνομα">
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="3" name="message" required
+                            placeholder="Το μήνυμά σας"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="submit-button" type="submit"
+                            class="main-btn p-2 px-5 mt-4 rounded-pill">Υποβολή</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer-02">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-6">
+                    <div class="subscribe mb-5">
+                        <form action="#" class="subscribe-form">
+                            <div class="form-group d-flex">
+                                <input type="text" class="form-control rounded-left"
+                                    placeholder="Εισάγετε διεύθυνση email">
+                                <input type="submit" value="ΕΓΓΡΑΦΕΙΤΕ" class="form-control submit px-3">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row main-footer">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row">
+                        <div class="col-md-12 mb-md-0 mb-4">
+                            <h2 class="footer-heading mt-1"><a href="#" class="logo">MyDentalCare</a></h2>
+                            <div class="row mt-5">
+                                <div class="col-3">
+                                    <img class="footer-icon-route" src="../assets/footer icon/route.png"
+                                        alt="route icon">
+                                </div>
+                                <div class="col-9">
+                                    <h4>Θεσσαλονίκη</h4>
+                                    <p>Κωνσταντινουπόλεως 4, Θεσσαλονίκη 546 40</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="footer-icon-route" src="../assets/footer icon/route.png"
+                                        alt="route icon">
+                                </div>
+                                <div class="col-9">
+                                    <h4>Αθήνα</h4>
+                                    <p>Πόντου 20-22,Μέγαρο Μουσικής, Αθήνα 115 28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 border-left">
+                    <h2 class="footer-headings mt-3">Επικοινωνία</h2>
+                    <div class="row  mb-4">
+                        <img class="footer-icon mx-2" src="../assets/footer icon/email.png" alt="email icon">
+                        <span><a href="mailto:pennybompou@gmail.com">pennybompou@gmail.com</a></span>
+                    </div>
+                    <div class="row">
+                        <img class="footer-icon mx-2" src="../assets/footer icon/phone-call.png" alt="phone call icon">
+
+                        <span><a href="tel:6980381057">6980381057</a> | <a href="tel:2107750882">210-7750882</a></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-2 ">
+                    <h2 class="footer-headings mt-3">Βοήθεια</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="py-1 d-block">Αρχική</a></li>
+                        <li><a href="#" class="py-1 d-block">Αισθητική Οδοντιατρική</a></li>
+                        <li><a href="#" class="py-1 d-block">Γενική Οδοντιατρική</a></li>
+                        <li><a href="#" class="py-1 d-block">Χειρουργική Στόματος</a></li>
+                        <li><a href="#" class="py-1 d-block">Λίγα Λόγια Για Εμάς</a></li>
+                        <li><a href="#" class="py-1 d-block">FAQ</a></li>
+                        <li><a href="#" class="py-1 d-block">Τοποθεσίες</a></li>
+                        <li><a href="#" class="py-1 d-block">Blog</a></li>
+                        <li><a href="#" class="py-1 d-block">Επικοινωνία</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <h2 class="footer-headings mt-3">Social</h2>
+                    <div>
+                        <a href="#" class="py-1 pr-2"><img class="footer-icon" src="../assets/footer icon/instagram.png"
+                                alt="instagram icon"></a>
+                        <a href="https://www.facebook.com/dentalclinicBompouP/?locale=el_GR" class="py-1 px-2"><img
+                                class="footer-icon" src="../assets/footer icon/facebook.png" alt="facebook icon"></a>
+                        <a href="https://www.linkedin.com/in/penny-bompou/?originalSubdomain=gr" class="py-1 px-2"><img
+                                class="footer-icon" src="../assets/footer icon/linkedin.png" alt="instagram icon"></a>
+                    </div>
+                    <a href="" class="book-button mt-5 mb-5 btn btn-lg">ΚΡΑΤΗΣΗ ΤΩΡΑ</a>
+                </div>
+
+            </div>
+    </footer>
+    <div class="after-footer d-flex justify-content-center pt-3">
+        <p class="copyright mr-4">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> - MyDentalCare | All rights
+            reserved
+        </p>
+
+        <p class="ml-4 copyright mb-0 list-unstyled">
+            <span>Made by </span>
+            <a href="https://chryskoum.github.io/ChrysK/">ChrysKoum</a>
+            <span> &</span>
+            <a class="mr-md-3" href="#">KomisD</a>
+        </p>
+    </div>
+
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/counterup.min.js"></script>
+    <script src="../js/waypoints/waypoints.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
