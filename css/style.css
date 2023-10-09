@@ -406,7 +406,7 @@ a {
 
 .p-why-us{
   font-weight: 500;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .box-why-us{
@@ -477,6 +477,62 @@ a {
     color: white;
 }
 
+/*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+#faq a{
+    text-decoration:revert;
+    color: #3d4347;
+}
+#faq a:hover{
+    color: black;
+}
+
+#faq button:focus,
+#faq button:active,
+#faq button:hover{
+    border: 1px solid transparent;
+} 
+
+#faq .landing-page h2{
+    padding: 6rem 0 2rem;
+    font-size: var(--font-size-h2);
+}
+
+#faq  h2{
+    padding: 8rem 0 0;
+    font-size: var(--font-size-h2);
+}
+
+#faq button{
+    text-align: start;
+    font-size: var(--font-size-h4);
+    color: #767676;
+    border-color:transparent ;
+}
+
+#faq .landing-page p{
+    margin:0 ;
+}
+
+#faq h3{
+    margin:0 0 2rem ;
+    font-size: var(--font-size-h4);
+}
+
+#faq .card-body{
+    font-size: var(--font-size-body);
+}
+
+#faq .landing-page .card:nth-of-type(4){
+    margin-bottom: 4rem;
+}
+
+#faq hr{
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #000000;
+}
 /* ===================================================================
  * # Carousel
  * ------------------------------------------------------------------- */

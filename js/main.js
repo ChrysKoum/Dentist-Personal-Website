@@ -148,4 +148,45 @@
     delay: 10,
     time: 2000,
   });
+  var faqQuestions = document.querySelectorAll(".faq-questions");
+
+  faqQuestions.forEach(function (question) {
+    question.addEventListener("click", function () {
+      var clickedIcon = this.querySelector("i");
+      var clickedAriaExpandedValue = this.getAttribute("aria-expanded");
+
+      faqQuestions.forEach(function (otherQuestions) {
+        if (otherQuestions === question) {
+          // Skip the clicked header
+          return;
+        }
+
+        var icon = otherQuestions.querySelector("i");
+        var ariaExpandedValue = otherQuestions.getAttribute("aria-expanded");
+
+        if (
+          icon.classList.contains("fa-chevron-up") &&
+          ariaExpandedValue === "true"
+        ) {
+          icon.classList.remove("fa-chevron-up", "text-primary");
+          icon.classList.add("fa-chevron-down");
+          otherQuestions.classList.remove("text-primary");
+        }
+      });
+
+      // Handling the clicked header separately
+      if (
+        clickedIcon.classList.contains("fa-chevron-down") &&
+        clickedAriaExpandedValue === "false"
+      ) {
+        clickedIcon.classList.remove("fa-chevron-down");
+        clickedIcon.classList.add("fa-chevron-up", "text-primary");
+        question.classList.add("text-primary");
+      } else {
+        clickedIcon.classList.remove("fa-chevron-up", "text-primary");
+        clickedIcon.classList.add("fa-chevron-down");
+        question.classList.remove("text-primary");
+      }
+    });
+  });
 })(jQuery);
