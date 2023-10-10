@@ -1,9 +1,8 @@
-.container {
-    overflow: hidden;
-    padding: 20px;
-    margin-top: 2em;
-    background: rgba(0,0,0,.1)
-  }
+
+.card {
+    transition: left 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
   
   .card-carousel {
     --card-width: 80%;
@@ -102,16 +101,3 @@
     top: calc(-10% - 3px);
     left: calc(-10% - 3px);
   }
-  
-
-  .card-carousel .card:nth-of-type(1) {
-    left: 0%; /* Position the first card at the beginning */
-}
-
-    .card-carousel .card:nth-of-type(2) {
-    left: calc(50% - (var(--card-width) / 2)); /* Center the second card */
-}
-
-    .card-carousel .card:nth-of-type(3) {
-    left: calc(100% - var(--card-width)); /* Position the third card at the end */
-}
