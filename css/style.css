@@ -359,7 +359,6 @@ a {
     background-color: #30D5C7;
     color: white;
     border: none;
-    font-size: 26px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -369,13 +368,10 @@ a {
     background-color: #28bfa9;  /* A slightly darker shade for hover effect */
 }
 
-.call-text{
-  font-size: 1.75rem;
-}
-
 /* ===================================================================
  * # Services
  * ------------------------------------------------------------------- */
+
 
 .card {
     transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and transform */
@@ -388,6 +384,27 @@ a {
 }
 
 
+.carousel-center-img {
+    width: 60%; 
+    border-radius: 15px; 
+    transition: transform 0.5s, width 0.5s;
+}
+
+.carousel-side-img {
+    width: 30%; 
+    border-radius: 15px; 
+    align-self: center;
+    transition: transform 0.5s, width 0.5s;
+}
+
+/* Optional: Add some space between images */
+.d-flex > img + img {
+    margin-left: 10px;
+}
+
+#services{
+  color: #000;
+}
 /* ===================================================================
  * # Why Us
  * ------------------------------------------------------------------- */
