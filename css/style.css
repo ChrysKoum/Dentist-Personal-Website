@@ -372,6 +372,14 @@ a {
     transition: 0.3s;
 }
 
+#location-btn {
+  border-radius: 50px;
+}
+
+#location-color {
+  color: #333333;
+}
+
 .main-btn:hover {
     background-color: #28bfa9;  /* A slightly darker shade for hover effect */
 }
