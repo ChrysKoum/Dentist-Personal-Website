@@ -353,6 +353,16 @@ a {
 }
 
 
+.card {
+  transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and transform */
+  padding: 10px; /* Adds padding around the card */
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adjusted shadow for a softer, more distant look */
+  transform: translateY(-5px); /* Slightly lifts the card */
+}
+
 .main-btn {
     background-color: #30D5C7;
     color: white;
