@@ -1,14 +1,19 @@
 
-.card {
-    transition: left 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+
+#transition-cards {
+    transition: transform 1s ease, left 1s ease, opacity 1s ease, z-index 1s ease;
+    padding: 0;
 }
+
+
 
   
   .card-carousel {
-    --card-width: 80%;
+    --card-width: 90%;
     --card-max-width: 280px;
-    --card-height: 350px;
+    --card-height: 400px;
     --carousel-min-width: 600px;
+    overflow: hidden; /* ensure card overflow is hidden */
     z-index: 1;
     position: relative;
     margin: 0 auto;
@@ -16,12 +21,6 @@
     height: var(--card-height);
     min-width: var(--carousel-min-width);
     transition: filter .3s ease;
-  }
-  
-  @media screen and (max-width: 640px) {
-    .card-carousel {
-      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
-    }
   }
   
   .card-carousel.smooth-return {
