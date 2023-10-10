@@ -456,6 +456,20 @@ a {
   background-color: #407C87;
   color: #fff;
 }
+
+@media (max-width: 767px) {
+  .counter-box {
+    height: 70px;
+    width: 320px;
+  }
+  .counter-box .counter{
+    font-size: 20px;
+  }
+  
+  .counter-box .counter span{
+    font-size: 16px;
+  }
+}
 /* ===================================================================
  * # History
  * ------------------------------------------------------------------- */
