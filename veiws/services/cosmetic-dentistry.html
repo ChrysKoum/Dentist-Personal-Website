@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../../css/style-boostrap.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/icomoon/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -31,7 +33,7 @@
             <div class="row align-items-center">
 
                 <div class="col-6 col-xl-2">
-                    <a href="../../index.html"><img class="logo-img" src="../../assets/logo/logo.png"
+                    <a href="../../index.html"><img class="logo-img" src="../../../../assets/logo/logo.png"
                             alt="logo icon"></a>
                 </div>
 
@@ -42,7 +44,8 @@
                             <li class="has-children"><a href="#services" class="nav-link parent-a"
                                     onclick="event.preventDefault();">ΥΠΗΡΕΣΙΕΣ</a>
                                 <ul class="dropdown">
-                                    <li><a href="#" class="nav-link">ΑΙΣΘΗΤΙΚΗ
+                                    <li><a href="#" onclick="event.preventDefault();"
+                                            style=" cursor: default; color: #30D5C7;" class="nav-link">ΑΙΣΘΗΤΙΚΗ
                                             ΟΔΟΝΤΙΑΤΡΙΚΗ</a></li>
                                     <li><a href="general-dental.html" class="nav-link">ΓΕΝΙΚΗ ΟΔΟΝΤΙΑΤΡΙΚΗ</a>
                                     </li>
@@ -54,9 +57,9 @@
                                 <a href="#about-us" class="nav-link parent-a" onclick="event.preventDefault();">ΣΧΕΤΙΚΑ
                                     ΜΕ ΕΜΑΣ</a>
                                 <ul class="dropdown">
-                                    <li><a href="about-us/about-us.html" class="nav-link">ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΕΜΑΣ</a>
+                                    <li><a href="../about-us/about-us.html" class="nav-link">ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΕΜΑΣ</a>
                                     </li>
-                                    <li><a href="about-us/faq.html" class="nav-link">FAQ</a></li>
+                                    <li><a href="../about-us/faq.html" class="nav-link">FAQ</a></li>
                                 </ul>
                             </li>
                             <li><a href="../locations.html" class="nav-link">ΤΟΠΟΘΕΣΙΕΣ</a></li>
@@ -77,6 +80,60 @@
     </header>
     <!-- Page Content -->
 
+    <section class="testimonials">
+        <h1 class="mb-6 py-5 text-center display-4 font-weight-bold text-body" style="background-color: #D3E1E2;">
+            Είστε
+            σε Καλά Χέρια</h1>
+        <div class="carousel-container ">
+            <div class="carousel-card" id="far-left">
+                <p class="carousel-text">Η κ. Μπόμπου με έκανε να ανακτήσω την εμπιστοσύνη μου στους οδοντιάτρους.
+                    Ο επαγγελματισμός και η φροντίδα της είναι αξεπέραστή. Δεν θα άλλαζα ιατρείο για κανένα λόγο!
+                </p>
+                <hr class="separator my-1 my-md-4">
+                <span class="reviewer-name">Νίκος Λ.</span>
+            </div>
+            <div class="carousel-card" id="left">
+                <!-- No change here. It remains as you provided. -->
+                <p class="carousel-text">Στην κ. Μπόμπου αισθάνομαι σίγουρος. Είναι εξαιρετική στη δουλειά της και
+                    πάντα
+                    με
+                    βοηθάει να νιώθω άνετα. Αξίζει να την
+                    επισκεφτείτε!</p>
+                <hr class="separator my-1 mt-md-5 mb-md-4">
+                <span class="reviewer-name">Μαρία Κ.</span>
+            </div>
+            <div class="carousel-card" id="center">
+                <!-- No change here. It remains as you provided. -->
+                <p class="carousel-text">Η κ. Μπόμπου είναι επαγγελματίας με ακεραιότητα. Το ιατρείο της είναι η
+                    πρώτη
+                    μου
+                    επιλογή για οδοντιατρική φροντίδα. Την
+                    προτείνω ανεπιφύλακτα!</p>
+                <hr class="separator my-1 mt-md-5 mb-md-4">
+                <span class="reviewer-name">Έλενα Π.</span>
+            </div>
+            <div class="carousel-card" id="right">
+                <!-- No change here. It remains as you provided. -->
+                <p class="carousel-text">Η κ. Μπόμπου είναι τόσο επαγγελματίας και ευγενική. Με κάνει να αισθάνομαι
+                    σαν
+                    στο
+                    σπίτι μου. Σίγουρα η καλύτερη
+                    οδοντίατρος που επισκέφτηκα!</p>
+                <hr class="separator my-1 mt-md-5 mb-md-4">
+                <span class="reviewer-name">Κώστας Β.</span>
+            </div>
+            <div class="carousel-card" id="far-right">
+                <p class="carousel-text">Η εμπειρία μου με την κ. Μπόμπου ήταν εξαιρετική. Η γνώση και η τεχνόγωσία
+                    της
+                    είναι
+                    κορυφαία.
+                    Με έκανε να νιώσω ότι είμαι σε ασφαλή χέρια!</p>
+                <hr class="separator my-1 mt-md-5 mb-md-4">
+                <span class="reviewer-name">Δημήτρης Γ.</span>
+            </div>
+
+        </div>
+    </section>
     <footer class="footer-02">
         <div class="container">
             <div class="row justify-content-center">
@@ -92,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row main-footer">
+            <div class="row main-footer text-center text-md-left">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="row">
                         <div class="col-md-12 mb-md-0 mb-4">
@@ -120,15 +177,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 border-left">
+                <div class="col-12 col-md-6 col-lg-3 contact-footer">
                     <h2 class="footer-headings mt-3">Επικοινωνία</h2>
-                    <div class="row  mb-4">
-                        <img class="footer-icon mx-2" src="../../assets/footer icon/email.png" alt="email icon">
+                    <div class="mb-4">
+                        <img class="footer-icon" src="../../assets/footer icon/email.png" alt="email icon">
                         <span><a href="mailto:pennybompou@gmail.com">pennybompou@gmail.com</a></span>
                     </div>
-                    <div class="row">
-                        <img class="footer-icon mx-2" src="../../assets/footer icon/phone-call.png"
-                            alt="phone call icon">
+                    <div>
+                        <img class="footer-icon" src="../../assets/footer icon/phone-call.png" alt="phone call icon">
 
                         <span><a href="tel:6980381057">6980381057</a> | <a href="tel:2107750882">210-7750882</a></span>
                     </div>
@@ -137,20 +193,22 @@
                 <div class="col-12 col-md-6 col-lg-2 ">
                     <h2 class="footer-headings mt-3">Βοήθεια</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-1 d-block">Αρχική</a></li>
-                        <li><a href="#" class="py-1 d-block">Αισθητική Οδοντιατρική</a></li>
-                        <li><a href="#" class="py-1 d-block">Γενική Οδοντιατρική</a></li>
-                        <li><a href="#" class="py-1 d-block">Χειρουργική Στόματος</a></li>
-                        <li><a href="#" class="py-1 d-block">Λίγα Λόγια Για Εμάς</a></li>
-                        <li><a href="#" class="py-1 d-block">FAQ</a></li>
-                        <li><a href="#" class="py-1 d-block">Τοποθεσίες</a></li>
-                        <li><a href="#" class="py-1 d-block">Blog</a></li>
-                        <li><a href="#" class="py-1 d-block">Επικοινωνία</a></li>
+                        <li><a href="../../index.html" class="py-1 d-block">Αρχική</a></li>
+                        <li><a href="#" class="py-1 d-block">Αισθητική
+                                Οδοντιατρική</a></li>
+                        <li><a href="general-dental.html" class="py-1 d-block">Γενική Οδοντιατρική</a>
+                        </li>
+                        <li><a href="surgery-mouth.html" class="py-1 d-block">Χειρουργική Στόματος</a>
+                        </li>
+                        <li><a href="../about-us/about-us.html" class="py-1 d-block">Λίγα Λόγια Για Εμάς</a></li>
+                        <li><a href="../about-us/faq.html" class="py-1 d-block">FAQ</a></li>
+                        <li><a href="../locations.html" class="py-1 d-block">Τοποθεσίες</a></li>
+                        <li><a href="../contact us.html" class="py-1 d-block">Επικοινωνία</a></li>
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 ">
-                    <h2 class="footer-headings mt-3">Social</h2>
+                <div class="col-12 col-md-6 col-lg-3 social-footer">
+                    <h2 class="footer-headings mt-3 ">Social</h2>
                     <div>
                         <a href="#" class="py-1 pr-2"><img class="footer-icon"
                                 src="../../assets/footer icon/instagram.png" alt="instagram icon"></a>
@@ -166,22 +224,22 @@
             </div>
     </footer>
     <div class="after-footer d-flex justify-content-center pt-3">
-        <p class="copyright mr-4">
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> - MyDentalCare | All rights
-            reserved
-        </p>
-
-        <p class="ml-4 copyright mb-0 list-unstyled">
-            <span>Made by </span>
-            <a href="https://chryskoum.github.io/ChrysK/">ChrysKoum</a>
-            <span> &</span>
-            <a class="mr-md-3" href="#">KomisD</a>
-        </p>
+        <div class="container text-center">
+            <p class="copyright mr-4">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> - MyDentalCare | All rights
+                reserved
+                <span class="ml-4">Made by </span>
+                <a href="https://chryskoum.github.io/ChrysK/">ChrysKoum</a>
+                <span> &</span>
+                <a class="mr-md-3" href="https://raw.githack.com/KomisD/Personal-Portfolio/main/Home.html">KomisD</a>
+            </p>
+        </div>
     </div>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/popper.js"></script>
     <script src="../../js/bootstrap.min.js"></script>

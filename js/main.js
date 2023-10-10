@@ -148,12 +148,15 @@
     delay: 10,
     time: 2000,
   });
+
+  /* FAQ */
   var faqQuestions = document.querySelectorAll(".faq-questions");
 
   faqQuestions.forEach(function (question) {
     question.addEventListener("click", function () {
       var clickedIcon = this.querySelector("i");
       var clickedAriaExpandedValue = this.getAttribute("aria-expanded");
+      var hrElement = this.nextElementSibling; // Get the <hr> element
 
       faqQuestions.forEach(function (otherQuestions) {
         if (otherQuestions === question) {
@@ -168,9 +171,12 @@
           icon.classList.contains("fa-chevron-up") &&
           ariaExpandedValue === "true"
         ) {
-          icon.classList.remove("fa-chevron-up", "text-primary");
+          icon.classList.remove(
+            "fa-chevron-up",
+            "text-primary-dentist-dentist"
+          );
           icon.classList.add("fa-chevron-down");
-          otherQuestions.classList.remove("text-primary");
+          otherQuestions.classList.remove("text-primary-dentist");
         }
       });
 
@@ -180,16 +186,19 @@
         clickedAriaExpandedValue === "false"
       ) {
         clickedIcon.classList.remove("fa-chevron-down");
-        clickedIcon.classList.add("fa-chevron-up", "text-primary");
-        question.classList.add("text-primary");
+        clickedIcon.classList.add("fa-chevron-up", "text-primary-dentist");
+        question.classList.add("text-primary-dentist");
+        hrElement.style.display = "block"; // Show the <hr> element
       } else {
-        clickedIcon.classList.remove("fa-chevron-up", "text-primary");
+        clickedIcon.classList.remove("fa-chevron-up", "text-primary-dentist");
         clickedIcon.classList.add("fa-chevron-down");
-        question.classList.remove("text-primary");
+        question.classList.remove("text-primary-dentist");
+        hrElement.style.display = "none"; // Hide the <hr> element
       }
     });
   });
 
+  /* Carousel of location*/
   $(document).ready(function () {
     $("#photoCarousel").on("slide.bs.carousel", function (e) {
       var $e = $(e.relatedTarget);

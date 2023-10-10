@@ -22,7 +22,6 @@ a {
   height: 100vh;
   width: 100%;
   background: #5d5b6a; }
-
 .site-navbar {
   margin-bottom: 0px;
   z-index: 1999;
@@ -46,7 +45,6 @@ a {
       display: inline-block; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 20px 20px;
-        font-size: 13px;
         text-transform: uppercase;
         display: inline-block;
         text-decoration: none !important; }
@@ -373,12 +371,20 @@ a {
  * ------------------------------------------------------------------- */
 
 
-.card {
+#services .card {
     transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and transform */
     padding: 10px; /* Adds padding around the card */
 }
 
-.card:hover {
+
+@media (max-width: 767px) {
+    #services .card {
+      width: auto;
+  }
+}
+
+
+#services .card:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adjusted shadow for a softer, more distant look */
     transform: translateY(-5px); /* Slightly lifts the card */
 }
@@ -408,7 +414,9 @@ a {
 /* ===================================================================
  * # Why Us
  * ------------------------------------------------------------------- */
-
+.why-us{
+  background-image: url("../assets/background_blur.png");
+}
 
 .counter-box {
     height: 100px;
@@ -432,21 +440,21 @@ a {
 }
 
 .cv-button{
-    color: #000 !important;
+    color: #000 ;
     display: block;
-    width: 183px;
-    height: 47px;
+    width: 180px;
+    height: 60px;
     line-height: 9px;
-    font-size: 17px;
+    font-size: 20px;
     background: #30D5C7 ;
     border: none;
     letter-spacing: 1px;
-    text-transform: uppercase;
     border-radius: 12px;
+    transition: all 1s;
 }
 .cv-button:hover{
-  background-color: #28bfa9;
-  color: #000;
+  background-color: #407C87;
+  color: #fff;
 }
 /* ===================================================================
  * # History
@@ -454,6 +462,11 @@ a {
 .p-history{
   font-weight: 500;
   font-size: large;
+}
+
+.box-history{
+  background: #D3E1E2;
+  border-radius: 20px;
 }
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
@@ -504,6 +517,12 @@ a {
 #faq a:hover{
     color: black;
 }
+#faq .col-6 .card{
+  padding: 0;
+}
+#faq .card{
+  margin-top: 30px ;
+}
 
 #faq button:focus,
 #faq button:active,
@@ -548,7 +567,15 @@ a {
 #faq hr{
     margin: 0;
     border: 0;
-    border-top: 1px solid #000000;
+    border-top: 2px solid #28bfa9;
+}
+
+#faq .faq-questions{
+  text-decoration: none;
+}
+
+#faq .text-primary-dentist{
+  color: #28bfa9 ;
 }
 /* ===================================================================
  * # Carousel
@@ -563,8 +590,8 @@ a {
   text-align: left;
   position: relative;
   height: 450px;
-  max-width: 1980px;
-  min-width: 600px;
+  max-width: 1498px;
+  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -583,6 +610,7 @@ a {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+
 
 .carousel-icon {
   border-radius: 50%;
@@ -624,6 +652,7 @@ a {
   background-color: #F0F0F0;
 }
 
+
 .carousel-text {
     font-size: 16px;
     color: #333;
@@ -644,10 +673,25 @@ a {
     margin: 10px 0;  /* Add some vertical spacing around the line */
 }
 
-.carousel-card:hover {
-
+@media (max-width: 767px) {
+    #far-left {
+        
+      transform: scale(.9) translateY(0%) translateX(0%);
+    } 
+    
+    #far-right {
+      left: 80%;
+      transform: scale(.9) translateY(0%) translateX(-80%);
+    }
+    .carousel-card {
+      height: 250px;
+      width: 220px;
+      padding: 40px 30px 0;
+    }
+    .carousel-text {
+      font-size: 12px;
+    }
 }
-
 /* ===================================================================
  * # Footer
  * ------------------------------------------------------------------- */
@@ -656,7 +700,7 @@ a {
     height: auto;
 }
 
-.footer-icon{
+.footer-02 .footer-icon{
     width: 40px;
     height: auto;
 }
@@ -664,10 +708,14 @@ a {
 .after-footer {
     background-color: #D3E1E2 ;
 }
-
-.book-button{
+.contact-footer{
+  border-left: 2px solid white;
+}
+.social-footer{
+  border-left: 0px solid white;
+}
+.footer-02 .book-button{
     color: #fff !important;
-    display: block;
     width: 220px;
     height: 56px;
     line-height: 40px;
@@ -678,7 +726,11 @@ a {
     text-transform: uppercase;
     border-radius: 40px; 
 }
-
+.footer-02 .book-button:hover{
+    color: #fff !important;
+    background: #28bfa9 !important;
+    transition: all 1s;
+}
 #book-button-nav{
     color: #fff !important;
     display: block;
@@ -696,9 +748,29 @@ a {
   background-color: #28bfa9;
   color: #000;
 }
+
+@media (max-width: 1200px) {
+    .row.main-footer .logo {
+      
+    font-size: 36px;
+    } 
+}
+
+@media (max-width: 991px) {
+    .social-footer{
+      border-left: 2px solid white;
+    }
+}
+
 @media (max-width: 767px) {
     .row.main-footer {
         display: flex;
         justify-content: center;
     } 
+    .contact-footer{
+      border-left: 0px solid white;
+    }
+    .social-footer{
+      border-left: 0px solid white;
+    }
 }
