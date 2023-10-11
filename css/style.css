@@ -393,7 +393,10 @@ a {
     transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and transform */
     padding: 10px; /* Adds padding around the card */
 }
-
+#services .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
 @media (max-width: 767px) {
     #services .card {
@@ -493,7 +496,7 @@ a {
  * ------------------------------------------------------------------- */
 .p-history{
   font-weight: 500;
-  font-size: large;
+  font-size: 20px;
 }
 
 .box-history{
@@ -506,6 +509,39 @@ a {
 ----------------------------------------------------------------
 --------------------------------------------------------------*/
 
+  #section-contact .container-sm{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  
+  @media (min-width: 992px) {
+    #section-contact .container-sm {
+      max-width: 1200px; } }
+  @media (min-width: 600px) {
+    #section-contact .container-sm {
+    max-width: 800px;} }
+  @media (min-width: 800px){
+  #section-contact .container-sm {
+      max-width: 1000px;
+  } }
+  .container-md{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 992px) {
+    .container-md {
+      max-width: 1200px; } }
+  @media (min-width: 800px) {
+    .container-md {
+    max-width: 800px;} }
+  @media (min-width: 1000px){
+  .container-md {
+      max-width: 1200px;
+  } }
 .container-sm {
   padding-top: 7rem;
 }
@@ -610,7 +646,7 @@ a {
   color: #28bfa9 ;
 }
 /* ===================================================================
- * # Carousel
+ * # Carousel - Testimonials
  * ------------------------------------------------------------------- */
 .about-us-service-title {
   text-align: center;
@@ -723,6 +759,9 @@ a {
     .carousel-text {
       font-size: 12px;
     }
+    .carousel-container {
+    height: 360px;
+  }
 }
 /* ===================================================================
  * # Footer
@@ -779,6 +818,17 @@ a {
 #book-button-nav:hover{
   background-color: #28bfa9;
   color: #000;
+}
+.main-footer h4 {
+  color: #fff;
+}
+
+.copyright a {
+  color: #28bfa9;
+}
+
+.copyright a:hover {
+  color: #407C87;
 }
 
 @media (max-width: 1200px) {
