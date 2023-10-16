@@ -384,6 +384,12 @@ a {
     background-color: #28bfa9;  /* A slightly darker shade for hover effect */
 }
 
+.section-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
 /* ===================================================================
  * # Services
  * ------------------------------------------------------------------- */
