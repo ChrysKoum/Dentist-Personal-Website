@@ -509,6 +509,83 @@ a {
   background: #D3E1E2;
   border-radius: 20px;
 }
+
+/*--------------------------------------------------------------
+----------------------------------------------------------------
+# Services
+----------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+----------------------------------------------------------------
+# Cosmetics
+----------------------------------------------------------------
+--------------------------------------------------------------*/
+
+.image-7{
+  width: 600px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.container .book-button-services{
+    color: #fff ;
+    font-size: 17px;
+    background: #30D5C7 ;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+.container .book-button-services:hover{
+  background-color: #28bfa9;
+  color: #000;
+}
+.description{
+  position: relative;
+
+} 
+.description::before {
+    content: "";
+    position: absolute;
+    right: 7.2%;  /* Adjust this value to move the border to the desired starting position */
+    width: 100%; /* This will make the border appear on 50% of the element */
+    height: 8px;
+    background-color: #407C87;
+}
+.description::after {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    right: 37.3%;  /* Adjust this value to move the border to the desired starting position */
+    width: 70%; /* This will make the border appear on 50% of the element */
+    height: 8px;
+    background-color: #407C87;
+}
+.title {
+    color: #000;
+    text-align: center;
+    font-family: Gentium Book Basic, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #333;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 137.5%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
 # Contact Page
