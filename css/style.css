@@ -700,6 +700,53 @@ a {
     color: white;
 }
 
+#locations-contact .maps{
+  padding: 3rem 5rem;
+}
+
+#locations-contact h2{
+  font-weight: 500;
+  font-size: 36px;
+}
+
+#locations-contact .button-maps{
+  
+    color: #000 ;
+    font-size: 20px;
+    background: transparent ;
+    border: 1px solid #407C87;
+    border-radius: 12px;
+    transition: all 0.75s ease-in-out;
+}
+
+#locations-contact .button-maps:hover{
+  
+    color: #fff ;
+    background: #407C87 ;
+    transition: all 0.75s ease-in-out;
+}
+#locations{
+  padding: 5rem 5rem;
+}
+
+#locations .button-contact-maps{
+    color: #000 ;
+    font-size: 20px;
+    background: #30D5C7 ;
+    border-radius: 12px;
+    transition: all 0.75s ease-in-out;
+}
+
+#locations .button-contact-maps:hover{
+    color: #fff ;
+    background: #407C87 ;
+    transition: all 0.75s ease-in-out;
+}
+
+.testimonials-location{
+  padding: 6rem 0 5rem 0;
+  background-color: #D3E1E2;
+}
 /*--------------------------------------------------------------
 # FAQ
 --------------------------------------------------------------*/
@@ -804,11 +851,56 @@ a {
   border-bottom-right-radius: 50px;
 }
 
+.carousel-card-location {
+  height: 320px;
+  width: 315px;
+  transition: 1s;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  background-color: #30D5C7;
+  color: #FFF;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px grey;
+  border-radius: 30px;
+}
+
+.carousel-card-location img{
+  border-radius: 30px;
+}
+
 
 .carousel-icon {
   border-radius: 50%;
   height: 75px;
   width: 75px;
+}
+
+.img-opacity-1{
+  background-color: #212529;
+  width: 315px;
+  padding: 10px 0;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+
+ .img-opacity-2{
+  background-color: #212529;
+  width: 315px;
+  padding: 10px 0;
+  opacity: 0;
+  bottom: -121px;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  font-weight: 500;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 #far-left {
@@ -829,6 +921,17 @@ a {
   left: 50%;
   transform: scale(1.05) translateY(0%) translateX(-50%);
   z-index: 15;
+  transition: all 1s ease-in-out;
+}
+
+#center .img-opacity-1{
+  z-index: 18;
+  opacity: 1;
+}
+
+#center .img-opacity-2{
+  z-index: 18;
+  opacity: 1;
 }
 
 #right {
