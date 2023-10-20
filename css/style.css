@@ -522,15 +522,19 @@ a {
 # Cosmetics
 ----------------------------------------------------------------
 --------------------------------------------------------------*/
+.service-container{
+  padding: 5rem 0 3rem;
+  background-color: #D3E1E2;
+}
 
 .image-7{
-  width: 600px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
+
 .container .book-button-services{
     color: #fff ;
-    font-size: 17px;
+    font-size: 20px;
     background: #30D5C7 ;
     border: none;
     letter-spacing: 1px;
@@ -548,7 +552,7 @@ a {
 .description::before {
     content: "";
     position: absolute;
-    right: 7.2%;  /* Adjust this value to move the border to the desired starting position */
+    right: 2%;  /* Adjust this value to move the border to the desired starting position */
     width: 100%; /* This will make the border appear on 50% of the element */
     height: 8px;
     background-color: #407C87;
@@ -557,7 +561,7 @@ a {
     content: "";
     position: absolute;
     bottom: -5%;
-    right: 37.3%;  /* Adjust this value to move the border to the desired starting position */
+    right: 32%;  /* Adjust this value to move the border to the desired starting position */
     width: 70%; /* This will make the border appear on 50% of the element */
     height: 8px;
     background-color: #407C87;
@@ -586,6 +590,37 @@ a {
     justify-content: center;
 }
 
+/* Section 2 */
+.desc-service-container{
+  padding: 5rem 0 3rem;
+}
+
+.img-tooth{
+  width: 50px;
+  height: auto;
+}
+.desc-service-container .img-tooths{
+  padding: 5rem 0 0 5rem;
+}
+.img-tooth-desc{
+  padding-left: 1rem;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.img-service-desc{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 300px;
+}
+.button-wrapper-desc {
+    display: flex;
+    justify-content: start;
+}
+.text-desc{
+  font-size: 20px;
+  font-weight: 400;
+}
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
 # Contact Page
