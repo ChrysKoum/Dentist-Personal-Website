@@ -621,6 +621,13 @@ a {
   font-size: 20px;
   font-weight: 400;
 }
+.allservices{
+  cursor: pointer;
+}
+
+.allservices:hover .img-tooth-desc {
+  color: #28bfa9;
+}
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
 # Contact Page
