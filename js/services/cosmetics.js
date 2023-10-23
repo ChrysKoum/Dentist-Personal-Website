@@ -34,24 +34,32 @@
         } else if (serviceElement.classList.contains("service-3")) {
           service = "service-3";
         }
+        // Add fade-out class to initiate the fade-out transition
+        serviceDescImage.classList.add("fade-out");
+        serviceDescText.classList.add("fade-out");
 
-        switch (service) {
-          case "service-1":
-            serviceDescImage.src = "../../assets/unsplah/blog 2.jpg";
-            serviceDescText.innerHTML =
-              "Το τμήμα επανορθωτικής οδοντιατρικής μας προσφέρει προηγμένες τεχνικές και υλικά για την αποκατάσταση των κατεστραμμένων δοντιών, βελτιώνοντας την αισθητική και αποκαθιστώντας τη στοματική υγεία για χαμόγελα με αυτοπεποίθηση."; // Insert the service-1 description text here
-            break;
-          case "service-2":
-            serviceDescImage.src = "../../assets/unsplah/teeth whitening.jpg";
-            serviceDescText.innerHTML =
-              "Αφορά τις θεραπείες λεύκανσης των δοντιών που πραγματοποιούνται στο ιατρείο μας από καταρτισμένο επαγγελματία υγείας. Τηρώντας όλα τα πρωτόκολλα ασφαλείας, προστατεύουμε τα δόντια σας καθόλη τη διάρκεια της λεύκανσης, ώστε να σας προσφέρουμε το πιο λαμπερό σας χαμόγελο."; // Insert the service-2 description text here
-            break;
-          case "service-3":
-            serviceDescImage.src = "../../assets/unsplah/ORTHODONTIC.jpg";
-            serviceDescText.innerHTML =
-              "Το τμήμα ορθοδοντικής μας παρέχει ολοκληρωμένες ορθοδοντικές θεραπείες για τη διόρθωση των κακώς ευθυγραμμισμένων δοντιών και την επίτευξη ενός πιο ίσιου, πιο ισορροπημένου χαμόγελου. Με μια σειρά επιλογών όπως τιράντες και ευθυγραμμιστές"; // Insert the service-3 description text here
-            break;
-        }
+        // Use setTimeout to delay the content change until after the fade-out completes
+        setTimeout(function () {
+          switch (service) {
+            case "service-1":
+              serviceDescImage.src = "../../assets/unsplah/blog 2.jpg";
+              serviceDescText.innerHTML =
+                "Το τμήμα επανορθωτικής οδοντιατρικής μας προσφέρει προηγμένες τεχνικές και υλικά για την αποκατάσταση των κατεστραμμένων δοντιών, βελτιώνοντας την αισθητική και αποκαθιστώντας τη στοματική υγεία για χαμόγελα με αυτοπεποίθηση."; // Insert the service-1 description text here
+              break;
+            case "service-2":
+              serviceDescImage.src = "../../assets/unsplah/teeth whitening.jpg";
+              serviceDescText.innerHTML =
+                "Αφορά τις θεραπείες λεύκανσης των δοντιών που πραγματοποιούνται στο ιατρείο μας από καταρτισμένο επαγγελματία υγείας. Τηρώντας όλα τα πρωτόκολλα ασφαλείας, προστατεύουμε τα δόντια σας καθόλη τη διάρκεια της λεύκανσης, ώστε να σας προσφέρουμε το πιο λαμπερό σας χαμόγελο."; // Insert the service-2 description text here
+              break;
+            case "service-3":
+              serviceDescImage.src = "../../assets/unsplah/ORTHODONTIC.jpg";
+              serviceDescText.innerHTML =
+                "Το τμήμα ορθοδοντικής μας παρέχει ολοκληρωμένες ορθοδοντικές θεραπείες για τη διόρθωση των κακώς ευθυγραμμισμένων δοντιών και την επίτευξη ενός πιο ίσιου, πιο ισορροπημένου χαμόγελου. Με μια σειρά επιλογών όπως τιράντες και ευθυγραμμιστές"; // Insert the service-3 description text here
+              break;
+          }
+          serviceDescImage.classList.remove("fade-out");
+          serviceDescText.classList.remove("fade-out");
+        }, 1000); // 1 second (1000 milliseconds) delay to match the CSS transition duration
       });
     });
   });

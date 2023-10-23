@@ -31,7 +31,7 @@
     </div>
 
 
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <header class="site-navbar js-sticky-header site-navbar-target background-header" role="banner">
 
         <div class="container">
             <div class="row align-items-center">
@@ -67,8 +67,8 @@
                             <li><a href="locations.html" class="nav-link">ΤΟΠΟΘΕΣΙΕΣ</a></li>
                             <li><a href="#" onclick="event.preventDefault();" style=" cursor: default; color: #30D5C7;"
                                     class="nav-link">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-                            <li><a href="#contact-section" id="book-button-nav" class="nav-link btn btn-lg">ΚΡΑΤΗΣΗ
-                                    ΤΩΡΑ</a>
+                            <li><a href="#" id="book-button-nav" class="nav-link btn btn-lg" data-toggle="modal"
+                                    data-target="#myModal" data-toggle="modal" data-target="#myModal">ΚΡΑΤΗΣΗ ΤΩΡΑ</a>
                             </li>
                         </ul>
                     </nav>
@@ -88,7 +88,7 @@
             <div class="box-contact">
                 <h1 class="text-center display-4 mb-5 font-weight-bold text-body">
                     Επικοινωνήστε Μαζί μας</h1>
-                <form id=" contactForm" class="text-left" action="{{ url('/contact-mail')}}" method="post">
+                <form id=" contactForm" class="text-left" action="https://formspree.io/f/xvojdzpz" method="POST">
                     <div class="form-group mb-4">
                         <input type="text" class="form-control" id="name" name="name" required placeholder="Όνομα">
                     </div>
@@ -131,11 +131,13 @@
             <div class="row justify-content-center">
                 <div class="col-10 col-lg-6">
                     <div class="subscribe mb-5">
-                        <form action="#" class="subscribe-form">
+                        <form id="mailchimp-form"
+                            action="https://gmail.us14.list-manage.com/subscribe/post?u=707e632d87fe3f70f70a0164f&amp;id=c61865aea4&amp;f_id=0043b2e0f0"
+                            method="post" class="subscribe-form">
                             <div class="form-group d-flex">
-                                <input type="text" class="form-control rounded-left"
+                                <input type="text" name="EMAIL" class="form-control rounded-left"
                                     placeholder="Εισάγετε διεύθυνση email">
-                                <input type="submit" value="ΕΓΓΡΑΦΕΙΤΕ" class="form-control submit px-3">
+                                <input id="nl-button" type="submit" value="ΕΓΓΡΑΦΕΙΤΕ" class="form-control submit px-3">
                             </div>
                         </form>
                     </div>
@@ -209,7 +211,9 @@
                         <a href="https://www.linkedin.com/in/penny-bompou/?originalSubdomain=gr" class="py-1 px-2"><img
                                 class="footer-icon" src="../assets/footer icon/linkedin.png" alt="instagram icon"></a>
                     </div>
-                    <a href="" class="book-button mt-5 mb-5 btn btn-lg">ΚΡΑΤΗΣΗ ΤΩΡΑ</a>
+                    <a href="#" class="book-button mt-5 mb-5 btn btn-lg" data-toggle="modal"
+                        data-target="#myModal">ΚΡΑΤΗΣΗ
+                        ΤΩΡΑ</a>
                 </div>
 
             </div>
@@ -228,6 +232,24 @@
         </div>
     </div>
 
+    <!-- The Pop-Up Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Κλείστε ραντεβού</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        data-tally-src="https://tally.so/embed/w2Av4V?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                        loading="lazy" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0"
+                        title="Κλείστε ραντεβού"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
@@ -237,6 +259,7 @@
     <script src="../js/jquery.sticky.js"></script>
     <script src="../js/counterup.min.js"></script>
     <script src="../js/waypoints/waypoints.min.js"></script>
+    <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
     <script src="../js/main.js"></script>
 </body>
 

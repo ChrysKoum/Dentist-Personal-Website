@@ -5,7 +5,7 @@
   $('[data-toggle="tooltip"]').tooltip();
 
   // Code from the second script
-  var options = ["left", "center", "right"];
+  var options = ["left", "center", "right", "far-right"];
   var cards = document.querySelectorAll(".carousel-card-location");
   addCardListeners();
 

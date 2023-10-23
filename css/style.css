@@ -3,6 +3,7 @@
 
 
 
+body{font-family: 'Nunito Sans', sans-serif;}
 
 /* ===================================================================
  * # Navbar
@@ -171,6 +172,8 @@ a {
       float: right;
       margin-top: 8px; }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
+        
+    color: #fff;
         font-size: 30px;
         display: inline-block;
         padding-left: 10px;
@@ -207,7 +210,7 @@ a {
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #212529; }
+      color: #fff; }
       .site-mobile-menu .site-nav-wrap a:hover {
         color: #30D5C7; }
     .site-mobile-menu .site-nav-wrap li {
@@ -218,6 +221,8 @@ a {
     .site-mobile-menu .site-nav-wrap .social {
       display: inline-block; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
+      
+    color: #fff;
       position: absolute;
       right: 0px;
       top: 10px;
@@ -317,10 +322,9 @@ a {
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
         color: #30D5C7 !important; }
 
-
-
-
-
+.background-header{
+  background-color: #407C87;
+}
 /* ===================================================================
  * # Video
  * ------------------------------------------------------------------- */
@@ -438,6 +442,21 @@ a {
 #services{
   color: #000;
 }
+.img-service-desc, .text-desc {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+@media (min-width: 1200px) {
+  .pl-custom-6{
+    display: block;
+      padding-left: 4.45rem;
+  } 
+}
 /* ===================================================================
  * # Why Us
  * ------------------------------------------------------------------- */
@@ -459,13 +478,14 @@ a {
 .p-why-us{
   font-weight: 500;
   font-size: x-large;
+  
+  text-align: justify;
 }
 
 .box-why-us{
   background: #D3E1E2;
   border-radius: 20px;
 }
-
 .cv-button{
     color: #000 ;
     display: block;
@@ -484,6 +504,19 @@ a {
   color: #fff;
 }
 
+.download {
+    display: none !important;
+}
+#pdf-container {
+    overflow: auto;  
+    max-height: 70vh; 
+}
+canvas.img-fluid {
+    max-width: 100%;
+    height: auto !important; 
+}
+
+
 @media (max-width: 767px) {
   .counter-box {
     height: 70px;
@@ -496,6 +529,9 @@ a {
   .counter-box .counter span{
     font-size: 16px;
   }
+  .footer-02 .subscribe-form .form-group input {
+    font-size: 14px;
+  }
 }
 /* ===================================================================
  * # History
@@ -503,6 +539,7 @@ a {
 .p-history{
   font-weight: 500;
   font-size: 20px;
+  text-align: justify;
 }
 
 .box-history{
@@ -545,10 +582,8 @@ a {
   background-color: #28bfa9;
   color: #000;
 }
-.description{
-  position: relative;
 
-} 
+@media (min-width: 767px) {
 .description::before {
     content: "";
     position: absolute;
@@ -566,16 +601,29 @@ a {
     height: 8px;
     background-color: #407C87;
 }
-.title {
+}
+.faq-span{
+  margin-top: 5rem;
+}
+  .faq-title {
+  margin-top: 2rem;
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.title {
+  margin-top: 6rem;
+    color: #000;
+    text-align: center;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .description {
+    position: relative;
     color: #333;
     font-family: Inter, sans-serif;
     font-size: 24px;
@@ -586,6 +634,7 @@ a {
 }
 
 .button-wrapper {
+  margin-top: 3rem;
     display: flex;
     justify-content: center;
 }
@@ -627,6 +676,65 @@ a {
 
 .allservices:hover .img-tooth-desc {
   color: #28bfa9;
+}
+
+@media (max-width: 1400px) {
+
+  .faq-title{
+    font-size: 32px;
+}
+}
+
+@media (max-width: 1200px) {
+  .faq-span{
+  margin-top: 3rem;
+  font-size: 18px;
+}
+  .button-wrapper{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .faq-title{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+  .title {
+    margin-top: 4rem;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.text{
+  
+  font-size: 18px;
+}
+}
+
+@media (max-width: 991px) {
+  
+  .faq-span{
+  margin-top: 1.5rem;
+  font-size: 18px;
+}
+  .button-wrapper{
+    margin-top: 1rem;
+  }
+  
+  .faq-title {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  .title {
+    margin-top: 3rem;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .text{
+    font-size: 14px;
+  }
+  .container .book-button-services {
+    font-size: 16px;
+}
 }
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
@@ -750,6 +858,33 @@ a {
 .testimonials-location{
   padding: 6rem 0 5rem 0;
   background-color: #D3E1E2;
+}
+
+@media (max-width: 767px) {
+  
+  .image-7 {
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 0px;
+  }
+  #locations-contact .button-maps {
+    font-size: 16px;
+  }
+  #locations-contact h2 {
+    font-size: 24px;
+  }
+  #locations-contact .maps {
+      padding: 1.5rem;
+  }
+  .text-center.display-4{
+    font-size: 36px;
+  }
+  .box-contact {
+      padding: 4rem 3rem;
+  }
+  .testimonials-location{
+    padding: 5rem 0 3rem 0;
+  }
 }
 /*--------------------------------------------------------------
 # FAQ
@@ -946,7 +1081,7 @@ a {
 }
 
 #far-right {
-  left: 80%;
+  left: 82.5%;
   transform: scale(.9) translateY(0%) translateX(-50%);
   z-index: 5;
   background-color: #F0F0F0;
@@ -974,6 +1109,25 @@ a {
 }
 
 @media (max-width: 767px) {
+  .carousel-card {
+  height: 220px;
+  width: 215px;
+}
+
+.carousel-card-location {
+  height: 220px;
+  width: 215px;
+}
+
+.img-opacity-1{
+  width: 215px;
+}
+
+
+ .img-opacity-2{
+  width: 215px;
+  bottom: -90px;
+}
     #far-left {
         
       transform: scale(.9) translateY(0%) translateX(0%);
@@ -1051,6 +1205,10 @@ a {
   background-color: #28bfa9;
   color: #000;
 }
+
+.site-nav-wrap #book-button-nav {
+    line-height: 25px;
+}
 .main-footer h4 {
   color: #fff;
 }
@@ -1061,6 +1219,16 @@ a {
 
 .copyright a:hover {
   color: #407C87;
+}
+
+
+#nl-button.submit{
+  transition: all 0.7s ease-in-out;
+}
+#nl-button.submit:hover{
+  background-color: #407C87!important;
+  color: #fff!important;
+  transition: all 0.7s ease-in-out;
 }
 
 @media (max-width: 1200px) {

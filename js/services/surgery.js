@@ -35,23 +35,33 @@
           service = "service-3";
         }
 
-        switch (service) {
-          case "service-1":
-            serviceDescImage.src = "../../assets/unsplah/ORAL SURGERY.jpg";
-            serviceDescText.innerHTML =
-              "Η γναθοπροσωπική χειρουργική είναι μια εξειδικευμένη ενότητα στην οδοντιατρική μας πρακτική, που ασχολείται με τη χειρουργική αντιμετώπιση προβλημάτων στον γνάθο και το πρόσωπο."; // Insert the service-1 description text here
-            break;
-          case "service-2":
-            serviceDescImage.src = "../../assets/unsplah/endodontics.jpg";
-            serviceDescText.innerHTML =
-              "Η χειρουργική στόματος είναι μια εξειδικευμένη κατηγορία στην οδοντιατρική που αναλαμβάνει περίπλοκες επεμβάσεις στο στόμα και τις γύρω δομές."; // Insert the service-2 description text here
-            break;
-          case "service-3":
-            serviceDescImage.src = "../../assets/unsplah/tooth cleaning.jpg";
-            serviceDescText.innerHTML =
-              "Η εμφυτευματολογία αναφέρεται στην τεχνική της εισαγωγής οδοντικών εμφυτευμάτων στο στόμα για την αντικατάσταση απουσιάζοντων δοντιών."; // Insert the service-3 description text here
-            break;
-        }
+        // Add fade-out class to initiate the fade-out transition
+        serviceDescImage.classList.add("fade-out");
+        serviceDescText.classList.add("fade-out");
+
+        // Use setTimeout to delay the content change until after the fade-out completes
+        setTimeout(function () {
+          switch (service) {
+            case "service-1":
+              serviceDescImage.src = "../../assets/unsplah/ORAL SURGERY.jpg";
+              serviceDescText.innerHTML =
+                "Η γναθοπροσωπική χειρουργική είναι μια εξειδικευμένη ενότητα στην οδοντιατρική μας πρακτική, που ασχολείται με τη χειρουργική αντιμετώπιση προβλημάτων στον γνάθο και το πρόσωπο."; // Insert the service-1 description text here
+              break;
+            case "service-2":
+              serviceDescImage.src = "../../assets/unsplah/endodontics.jpg";
+              serviceDescText.innerHTML =
+                "Η χειρουργική στόματος είναι μια εξειδικευμένη κατηγορία στην οδοντιατρική που αναλαμβάνει περίπλοκες επεμβάσεις στο στόμα και τις γύρω δομές."; // Insert the service-2 description text here
+              break;
+            case "service-3":
+              serviceDescImage.src = "../../assets/unsplah/tooth cleaning.jpg";
+              serviceDescText.innerHTML =
+                "Η εμφυτευματολογία αναφέρεται στην τεχνική της εισαγωγής οδοντικών εμφυτευμάτων στο στόμα για την αντικατάσταση απουσιάζοντων δοντιών."; // Insert the service-3 description text here
+              break;
+          }
+
+          serviceDescImage.classList.remove("fade-out");
+          serviceDescText.classList.remove("fade-out");
+        }, 1000); // 1 second (1000 milliseconds) delay to match the CSS transition duration
       });
     });
   });
