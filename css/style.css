@@ -831,6 +831,19 @@ canvas.img-fluid {
   background-image: url("../assets/background_blur.png");
 }
 
+/* Regular styling for larger screens */
+.responsive-iframe {
+    width: 600px;
+    height: 300px;
+    border: 0;
+}
+
+/* Adjust width for screens under 1200px */
+@media (max-width: 1200px) {
+    .responsive-iframe {
+        width: 300px;
+    }
+}
 
 .box-contact{
   background: #D3E1E2;
