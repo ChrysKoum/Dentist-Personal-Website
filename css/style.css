@@ -321,6 +321,8 @@ a {
       color: #fff !important; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
         color: #30D5C7 !important; }
+       .sticky-wrapper .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
+        color: #30D5C7!important; }
 
 .background-header{
   background-color: #407C87;
@@ -1212,7 +1214,13 @@ canvas.img-fluid {
 .main-footer h4 {
   color: #fff;
 }
-
+.main-footer a:hover{
+  color: #000;
+  transition: all 0.3s;
+}
+.footer-02 .main-footer .list-unstyled li a:hover {
+    color: #000;
+}
 .copyright a {
   color: #28bfa9;
 }
