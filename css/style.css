@@ -5,6 +5,29 @@
 
 body{font-family: 'Nunito Sans', sans-serif;}
 
+
+/* ===================================================================
+ * # Navbar
+ * ------------------------------------------------------------------- */s
+/* Preloader CSS */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader img {
+    width: 150px;
+    height: 150px;
+}
+
 /* ===================================================================
  * # Navbar
  * ------------------------------------------------------------------- */
@@ -511,7 +534,7 @@ a {
 }
 #pdf-container {
     overflow: auto;  
-    max-height: 70vh; 
+    max-height: 80vh; 
 }
 canvas.img-fluid {
     max-width: 100%;
@@ -876,6 +899,22 @@ canvas.img-fluid {
     margin-top: 0.8rem;
 }
 }
+
+
+@media (max-width: 767px) {
+.container .button-wrapper-desc .book-button-services{
+  font-size:20px;
+  
+}
+.img-tooths{
+  margin-bottom: 2rem;
+}
+}
+.img-tooth-width{
+  
+      width: 150px;
+      margin-right: 8px;
+}
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
 # Contact Page
@@ -1040,10 +1079,7 @@ canvas.img-fluid {
   }
 }
 @media (max-width: 767px) {
-.allservices img{
-    display: flex;
-    margin-left: 74px;
-}
+
 .img-tooth-desc {
     padding-left: 0rem;
     text-align: center;
@@ -1366,7 +1402,7 @@ canvas.img-fluid {
 }
 #book-button-nav:hover{
   background-color: #28bfa9;
-  color: #000;
+  color: #000 !important;
 }
 
 .site-nav-wrap #book-button-nav {
