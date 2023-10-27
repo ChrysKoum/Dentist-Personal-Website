@@ -48,12 +48,12 @@
                 "Η γναθοπροσωπική χειρουργική είναι μια εξειδικευμένη ενότητα στην οδοντιατρική μας πρακτική, που ασχολείται με τη χειρουργική αντιμετώπιση προβλημάτων στον γνάθο και το πρόσωπο."; // Insert the service-1 description text here
               break;
             case "service-2":
-              serviceDescImage.src = "../../assets/unsplah/endodontics.jpg";
+              serviceDescImage.src = "../../assets/unsplah/ORAL SURGERY 2.jpg";
               serviceDescText.innerHTML =
                 "Η χειρουργική στόματος είναι μια εξειδικευμένη κατηγορία στην οδοντιατρική που αναλαμβάνει περίπλοκες επεμβάσεις στο στόμα και τις γύρω δομές."; // Insert the service-2 description text here
               break;
             case "service-3":
-              serviceDescImage.src = "../../assets/unsplah/tooth cleaning.jpg";
+              serviceDescImage.src = "../../assets/unsplah/IMPLANTS.jpg";
               serviceDescText.innerHTML =
                 "Η εμφυτευματολογία αναφέρεται στην τεχνική της εισαγωγής οδοντικών εμφυτευμάτων στο στόμα για την αντικατάσταση απουσιάζοντων δοντιών."; // Insert the service-3 description text here
               break;
