@@ -603,6 +603,52 @@ canvas.img-fluid {
     height: 8px;
     background-color: #407C87;
 }
+
+
+
+@media (min-width: 767px) {
+  .description {
+      position: relative;  
+      overflow: hidden;    
+  }
+
+  .description::before, .description::after {
+      content: "";
+      position: absolute;
+      width: 0;   
+      height: 8px;
+      background-color: #407C87;
+  }
+
+  .description::before {
+      top: 0;
+      left: 0; 
+      animation: loadLineFull 1s forwards; 
+      animation-delay: 0.5s;
+  }
+
+  .description::after {
+      bottom: 0;
+      left: 0; 
+      animation: loadLine80 1s forwards; 
+      animation-delay: 1s; 
+  }
+
+  @keyframes loadLineFull {
+      to {
+          width: 100%;   
+      }
+  }
+
+  @keyframes loadLine80 {
+      to {
+          width: 80%;   /* The width for the bottom line */
+      }
+  }
+}
+
+
+
 }
 .faq-span{
   margin-top: 5rem;
