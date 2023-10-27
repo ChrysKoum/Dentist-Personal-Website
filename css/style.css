@@ -608,8 +608,7 @@ canvas.img-fluid {
 
 @media (min-width: 767px) {
   .description {
-      position: relative;  
-      overflow: hidden;    
+      position: relative;     
   }
 
   .description::before, .description::after {
@@ -628,7 +627,7 @@ canvas.img-fluid {
   }
 
   .description::after {
-      bottom: 0;
+      bottom: -5%s;  
       left: 0; 
       animation: loadLine80 1s forwards; 
       animation-delay: 1s; 
