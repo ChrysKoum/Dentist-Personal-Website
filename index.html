@@ -29,9 +29,6 @@
 </head>
 
 <body>
-
-
-
     <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
             <div class="site-mobile-menu-close mt-3">
@@ -264,7 +261,11 @@
                         <p class="p-why-us">Ο οδοντιατρικος σχεδιασμός και η κάθε είδους οδοντιατρική θεραπεία
                             παρέχονται με γνώμονα τις ανάγκες και επιθυμίες του
                             ασθενή εξατομικευμένα.</p>
-                        <button id="openPDF" class="cv-button my-5">Βιογραφικό</button>
+                        <button id="openPDF" type="button" class="cv-button my-5" data-toggle="modal"
+                            data-target="#pdfModal">
+                            Βιογραφικό
+                        </button>
+
                     </div>
                     <!-- Right Column -->
                     <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center">
@@ -291,6 +292,10 @@
                     </button>
                 </div>
                 <div class="modal-body" id="pdf-container" oncontextmenu="return false;">
+                    <!-- Spinner -->
+                    <div class="spinner-border text-primary" role="status" id="pdf-loading">
+                        <span class="sr-only">Loading...</span>
+                    </div>
                     <!-- The PDF will be displayed here -->
                 </div>
             </div>

@@ -422,6 +422,21 @@ a {
 /* ===================================================================
  * # Services
  * ------------------------------------------------------------------- */
+/* animate .home-content__main
+ * ------------------------------------------------------------------- */
+html.ss-preload .home-content__main {
+  opacity: 0;
+}
+
+html.ss-loaded .home-content__main {
+  animation-duration: 2s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+html.no-csstransitions .home-content__main {
+  opacity: 1;
+}
 
 
 #services .card {
@@ -468,13 +483,18 @@ a {
   color: #000;
 }
 .img-service-desc, .text-desc {
+    transition: opacity 0.5s ease-in-out;
     opacity: 1;
-    transition: opacity 1s ease-in-out;
 }
 
 .fade-out {
     opacity: 0;
 }
+
+.fade-in {
+    opacity: 1;
+}
+
 
 @media (min-width: 1200px) {
   .pl-custom-6{
@@ -898,6 +918,13 @@ canvas.img-fluid {
 .service-button-wrapper {
     margin-top: 0.8rem;
 }
+}
+
+#pdf-container {
+    display: flex;
+    justify-content: center; /* align horizontally */
+    align-items: center;     /* align vertically */
+    height: 100%;            /* take full height of the container */
 }
 
 

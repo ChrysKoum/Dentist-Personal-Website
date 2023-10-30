@@ -1,67 +1,59 @@
 (function ($) {
-  /* Services Changing Js */
   document.addEventListener("DOMContentLoaded", function () {
-    // Get the main service description and image containers
     const serviceDescImage = document.querySelector(".img-service-desc");
     const serviceDescText = document.querySelector(".text-desc");
-
-    // Get all service elements with class .allservices
     const allservices = document.querySelectorAll(".allservices");
 
-    // Loop through the service elements and add click event listeners
+    const servicesData = {
+      "service-1": {
+        img: "../../assets/unsplah/ORAL SURGERY.jpg",
+        desc: "Η γναθοπροσωπική χειρουργική είναι μια εξειδικευμένη ενότητα στην οδοντιατρική μας πρακτική, που ασχολείται με τη χειρουργική αντιμετώπιση προβλημάτων στον γνάθο και το πρόσωπο.",
+      },
+      "service-2": {
+        img: "../../assets/unsplah/ORAL SURGERY 2.jpg",
+        desc: "Η χειρουργική στόματος είναι μια εξειδικευμένη κατηγορία στην οδοντιατρική που αναλαμβάνει περίπλοκες επεμβάσεις στο στόμα και τις γύρω δομές.",
+      },
+      "service-3": {
+        img: "../../assets/unsplah/IMPLANTS.jpg",
+        desc: "Η εμφυτευματολογία αναφέρεται στην τεχνική της εισαγωγής οδοντικών εμφυτευμάτων στο στόμα για την αντικατάσταση απουσιάζοντων δοντιών.",
+      },
+    };
+
     allservices.forEach(function (serviceElement) {
       serviceElement.addEventListener("click", function () {
-        // Get the img element within the clicked service
         const img = serviceElement.querySelector(".img-tooth");
+        const allToothImages = document.querySelectorAll(".img-tooth");
 
-        // Reset all images to the non-active state
-        const toothImages = document.querySelectorAll(".img-tooth");
-        toothImages.forEach(function (innerImg) {
+        allToothImages.forEach((innerImg) => {
           innerImg.src = "../../assets/icons/tooth (2).png";
           innerImg.classList.remove("active");
         });
 
-        // Set the image within the clicked service to the active state
         img.src = "../../assets/icons/tooth (1).png";
         img.classList.add("active");
 
-        // Update the main service description based on the clicked service
-        let service;
-        if (serviceElement.classList.contains("service-1")) {
-          service = "service-1";
-        } else if (serviceElement.classList.contains("service-2")) {
-          service = "service-2";
-        } else if (serviceElement.classList.contains("service-3")) {
-          service = "service-3";
+        const serviceKey = Array.from(serviceElement.classList).find(
+          (cls) => servicesData[cls]
+        );
+
+        if (servicesData[serviceKey]) {
+          serviceDescImage.classList.remove("fade-in");
+          serviceDescText.classList.remove("fade-in");
+          serviceDescImage.classList.add("fade-out");
+          serviceDescText.classList.add("fade-out");
+
+          setTimeout(function () {
+            serviceDescImage.src = servicesData[serviceKey].img;
+            serviceDescText.innerHTML = servicesData[serviceKey].desc;
+          }, 800);
+
+          setTimeout(function () {
+            serviceDescImage.classList.remove("fade-out");
+            serviceDescText.classList.remove("fade-out");
+            serviceDescImage.classList.add("fade-in");
+            serviceDescText.classList.add("fade-in");
+          }, 1000);
         }
-
-        // Add fade-out class to initiate the fade-out transition
-        serviceDescImage.classList.add("fade-out");
-        serviceDescText.classList.add("fade-out");
-
-        // Use setTimeout to delay the content change until after the fade-out completes
-        setTimeout(function () {
-          switch (service) {
-            case "service-1":
-              serviceDescImage.src = "../../assets/unsplah/ORAL SURGERY.jpg";
-              serviceDescText.innerHTML =
-                "Η γναθοπροσωπική χειρουργική είναι μια εξειδικευμένη ενότητα στην οδοντιατρική μας πρακτική, που ασχολείται με τη χειρουργική αντιμετώπιση προβλημάτων στον γνάθο και το πρόσωπο."; // Insert the service-1 description text here
-              break;
-            case "service-2":
-              serviceDescImage.src = "../../assets/unsplah/ORAL SURGERY 2.jpg";
-              serviceDescText.innerHTML =
-                "Η χειρουργική στόματος είναι μια εξειδικευμένη κατηγορία στην οδοντιατρική που αναλαμβάνει περίπλοκες επεμβάσεις στο στόμα και τις γύρω δομές."; // Insert the service-2 description text here
-              break;
-            case "service-3":
-              serviceDescImage.src = "../../assets/unsplah/IMPLANTS.jpg";
-              serviceDescText.innerHTML =
-                "Η εμφυτευματολογία αναφέρεται στην τεχνική της εισαγωγής οδοντικών εμφυτευμάτων στο στόμα για την αντικατάσταση απουσιάζοντων δοντιών."; // Insert the service-3 description text here
-              break;
-          }
-
-          serviceDescImage.classList.remove("fade-out");
-          serviceDescText.classList.remove("fade-out");
-        }, 1000); // 1 second (1000 milliseconds) delay to match the CSS transition duration
       });
     });
   });

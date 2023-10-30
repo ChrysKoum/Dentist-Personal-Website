@@ -1,40 +1,45 @@
-document.getElementById("openPDF").addEventListener("click", function () {
-  // Set workerSrc
-  pdfjsLib.GlobalWorkerOptions.workerSrc =
-    "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
+$(document).ready(function () {
+  document.getElementById("openPDF").addEventListener("click", function () {
+    // Show the spinner
+    document.getElementById("pdf-loading").style.display = "block";
 
-  // Load the PDF
-  var loadingTask = pdfjsLib.getDocument("assets/cv/Dental Clean Resume.pdf");
-  loadingTask.promise.then(function (pdf) {
-    // Fetch the first page (you can iterate over all pages if needed)
-    var pageNumber = 1;
-    pdf.getPage(pageNumber).then(function (page) {
-      var scale = 1.5;
-      var viewport = page.getViewport({ scale: scale });
+    // Set workerSrc
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
 
-      // Prepare canvas using PDF page dimensions
-      var canvas = document.createElement("canvas");
-      canvas.className = "img-fluid"; // Add this line
-      var context = canvas.getContext("2d");
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
+    // Load the PDF
+    var loadingTask = pdfjsLib.getDocument("assets/cv/Dental Clean Resume.pdf");
+    loadingTask.promise.then(function (pdf) {
+      // Fetch the first page (you can iterate over all pages if needed)
+      var pageNumber = 1;
+      pdf.getPage(pageNumber).then(function (page) {
+        var scale = 1.5;
+        var viewport = page.getViewport({ scale: scale });
 
-      // Render PDF page into canvas context
-      var renderContext = {
-        canvasContext: context,
-        viewport: viewport,
-      };
-      var renderTask = page.render(renderContext);
+        // Prepare canvas using PDF page dimensions
+        var canvas = document.createElement("canvas");
+        canvas.className = "img-fluid";
+        var context = canvas.getContext("2d");
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
 
-      // Wait for rendering to finish
-      renderTask.promise.then(function () {
-        var pdfContainer = document.getElementById("pdf-container");
-        pdfContainer.innerHTML = ""; // clear previous content
-        pdfContainer.appendChild(canvas);
+        // Render PDF page into canvas context
+        var renderContext = {
+          canvasContext: context,
+          viewport: viewport,
+        };
+        var renderTask = page.render(renderContext);
 
-        // Use Bootstrap's Modal functionality to show the modal
-        var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal"));
-        pdfModal.show();
+        // Wait for rendering to finish
+        renderTask.promise.then(function () {
+          var pdfContainer = document.getElementById("pdf-container");
+          pdfContainer.style.display = "block"; // Reset to block display
+          pdfContainer.innerHTML = ""; // Clear previous content
+          pdfContainer.appendChild(canvas);
+
+          // Hide the spinner now that the PDF is ready
+          document.getElementById("pdf-loading").style.display = "none";
+        });
       });
     });
   });
