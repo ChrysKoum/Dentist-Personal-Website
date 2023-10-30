@@ -936,12 +936,23 @@ canvas.img-fluid {
 .img-tooths{
   margin-bottom: 2rem;
 }
+
+  .service-text{
+    font-size: 16px;
+  }
+  .text-desc {
+    font-size: 16px;
+}
 }
 .img-tooth-width{
   
       width: 150px;
       margin-right: 8px;
 }
+
+  
+
+
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
 # Contact Page
@@ -1112,6 +1123,10 @@ canvas.img-fluid {
 .img-tooth-desc {
     padding-left: 0rem;
     text-align: center;
+    font-size: 16px;
+}
+.allservices.service-3{
+  width: 150px;
 }
 }
 /*--------------------------------------------------------------

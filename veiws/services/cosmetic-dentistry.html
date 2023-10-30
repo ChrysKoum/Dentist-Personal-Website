@@ -22,8 +22,8 @@
 
 <body>
     <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
+        <div class="site-mobile-menu-header js-menu-toggle pb-4">
+            <div class=" site-mobile-menu-close js-menu-toggle">
                 <span class="icon-close2 js-menu-toggle"></span>
             </div>
         </div>
@@ -46,6 +46,7 @@
 
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li class="has-children"><a href="#services" class="nav-link parent-a"
+                                    data-toggle="collapse" data-target="#collapseItem0"
                                     onclick="event.preventDefault();">ΥΠΗΡΕΣΙΕΣ</a>
                                 <ul class="dropdown">
                                     <li><a href="#" onclick="event.preventDefault();"
@@ -58,7 +59,8 @@
                                 </ul>
                             </li>
                             <li class="has-children">
-                                <a href="#about-us" class="nav-link parent-a" onclick="event.preventDefault();">ΣΧΕΤΙΚΑ
+                                <a href="#about-us" class="nav-link parent-a" onclick="event.preventDefault();"
+                                    data-toggle="collapse" data-target="#collapseItem1">ΣΧΕΤΙΚΑ
                                     ΜΕ ΕΜΑΣ</a>
                                 <ul class="dropdown">
                                     <li><a href="../about-us/about-us.html" class="nav-link">ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΕΜΑΣ</a>
@@ -110,7 +112,7 @@
     <section class="desc-service-container">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-12 img-tooths">
+                <div class="col-6 img-tooths">
                     <div class="allservices service-1">
                         <img loading="lazy" src="../../assets/icons/tooth (1).png" class="active img-tooth img-fluid" />
                         <span class="img-tooth-desc">ΕΠΑΝΟΡΘΩΤΙΚΗ ΟΔΟΝΤΙΑΤΡΙΚΗ</span>
@@ -129,7 +131,7 @@
                             ΤΩΡΑ</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-6">
                     <img src="../../assets/unsplah/blog 2.jpg" class="img-service-desc img-fluid" />
                     <p class="text-desc mt-4">
                         Το τμήμα επανορθωτικής οδοντιατρικής μας προσφέρει προηγμένες τεχνικές και υλικά για την

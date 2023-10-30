@@ -22,8 +22,8 @@
 
 <body>
     <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
+        <div class="site-mobile-menu-header js-menu-toggle pb-4">
+            <div class=" site-mobile-menu-close js-menu-toggle">
                 <span class="icon-close2 js-menu-toggle"></span>
             </div>
         </div>
@@ -46,6 +46,7 @@
 
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li class="has-children"><a href="#services" class="nav-link parent-a"
+                                    data-toggle="collapse" data-target="#collapseItem0"
                                     onclick="event.preventDefault();">ΥΠΗΡΕΣΙΕΣ</a>
                                 <ul class="dropdown">
                                     <li><a href="cosmetic-dentistry.html" class="nav-link">ΑΙΣΘΗΤΙΚΗ
@@ -59,7 +60,8 @@
                                 </ul>
                             </li>
                             <li class="has-children">
-                                <a href="#about-us" class="nav-link parent-a" onclick="event.preventDefault();">ΣΧΕΤΙΚΑ
+                                <a href="#about-us" class="nav-link parent-a" onclick="event.preventDefault();"
+                                    data-toggle="collapse" data-target="#collapseItem1">ΣΧΕΤΙΚΑ
                                     ΜΕ ΕΜΑΣ</a>
                                 <ul class="dropdown">
                                     <li><a href="../about-us/about-us.html" class="nav-link">ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΕΜΑΣ</a>
@@ -105,6 +107,7 @@
             </div>
         </div>
     </section>
+
     <section class="desc-service-container">
         <div class="container">
             <div class="row">
@@ -121,7 +124,7 @@
                         <img loading="lazy" src="../../assets/icons/tooth (2).png" class="img-tooth img-fluid" />
                         <span class="img-tooth-desc">ΠΡΟΛΗΠΤΙΚΟΣ ΕΛΕΓΧΟΣ ΚΑΙ ΕΚΜΑΘΗΣΗ<span class="pl-custom-6"></span>
                             ΣΤΟΜΑΤΙΚΗΣ
-                            ΦΡΟΝΤΙΔΑΣ</span></span>
+                            ΦΡΟΝΤΙΔΑΣ</span>
                     </div>
                     <div class="button-wrapper-desc mt-5">
                         <a href="#" class="book-button-services btn btn-lg" data-toggle="modal"
@@ -141,6 +144,7 @@
             </div>
         </div>
     </section>
+
     <section class="testimonials">
         <h2 class="mb-6 py-5 text-center display-4 font-weight-bold text-body" style="background-color: #D3E1E2;">
             Είστε
