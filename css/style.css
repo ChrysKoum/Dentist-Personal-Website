@@ -8,28 +8,6 @@ body{font-family: 'Nunito Sans', sans-serif;}
 
 /* ===================================================================
  * # Navbar
- * ------------------------------------------------------------------- */s
-/* Preloader CSS */
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#preloader img {
-    width: 150px;
-    height: 150px;
-}
-
-/* ===================================================================
- * # Navbar
  * ------------------------------------------------------------------- */
 
 a {
@@ -951,6 +929,69 @@ canvas.img-fluid {
 }
 
   
+
+/* ===================================================================
+ *  04. Preloader
+ *
+ * ------------------------------------------------------------------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9900;
+  height: 100%;
+  width: 100%;
+}
+
+.no-js #preloader, .oldie #preloader {
+  display: none;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding: 0;
+  background-color: #30D5C7;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@media (max-width: 767px) {
+    #loader {
+        top: 40%;
+    }
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
