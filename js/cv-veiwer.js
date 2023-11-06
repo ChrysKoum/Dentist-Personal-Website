@@ -8,7 +8,9 @@ $(document).ready(function () {
       "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
 
     // Load the PDF
-    var loadingTask = pdfjsLib.getDocument("assets/cv/Dental Clean Resume.pdf");
+    var loadingTask = pdfjsLib.getDocument(
+      "assets/cv/Παναγιώτα_Μπόμπου_CV.pdf"
+    );
     loadingTask.promise.then(function (pdf) {
       // Fetch the first page (you can iterate over all pages if needed)
       var pageNumber = 1;
