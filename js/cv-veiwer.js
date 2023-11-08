@@ -9,13 +9,13 @@ $(document).ready(function () {
 
     // Load the PDF
     var loadingTask = pdfjsLib.getDocument(
-      "assets/cv/Παναγιώτα_Μπόμπου_CV.pdf"
+      "assets/cv/Panagiota_Mpompou_CV.pdf"
     );
     loadingTask.promise.then(function (pdf) {
       // Fetch the first page (you can iterate over all pages if needed)
       var pageNumber = 1;
       pdf.getPage(pageNumber).then(function (page) {
-        var scale = 1.5;
+        var scale = 3;
         var viewport = page.getViewport({ scale: scale });
 
         // Prepare canvas using PDF page dimensions

@@ -148,7 +148,7 @@ a {
   width: 300px;
   position: fixed;
   right: 0;
-  z-index: 2000;
+  z-index: 1000;
   padding-top: 20px;
   background: #407C87;
   height: calc(100vh);
@@ -501,8 +501,6 @@ html.no-csstransitions .home-content__main {
 .p-why-us{
   font-weight: 500;
   font-size: x-large;
-  
-  text-align: justify;
 }
 
 .box-why-us{
@@ -541,6 +539,10 @@ canvas.img-fluid {
 
 
 @media (max-width: 767px) {
+  .p-why-us{
+  font-weight: 500;
+  font-size: larger;
+}
   .counter-box {
     height: 70px;
     width: 320px;
@@ -553,7 +555,7 @@ canvas.img-fluid {
     font-size: 16px;
   }
   .footer-02 .subscribe-form .form-group input {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 /* ===================================================================
@@ -570,6 +572,13 @@ canvas.img-fluid {
   border-radius: 20px;
 }
 
+
+@media (max-width: 767px) {
+  .p-history{
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
 /*--------------------------------------------------------------
 ----------------------------------------------------------------
 # Services
@@ -1134,7 +1143,9 @@ canvas.img-fluid {
 }
 
 @media (max-width: 767px) {
-  
+  #locations {
+    padding: 0;
+  }
   .image-7 {
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
