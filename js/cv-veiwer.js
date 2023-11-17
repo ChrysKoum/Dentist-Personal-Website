@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     // Load the PDF
     var loadingTask = pdfjsLib.getDocument(
-      "assets/cv/Panagiota_Mpompou_CV.pdf"
+      "assets/cv/Panagiota_Mpompou_CV_1.pdf"
     );
     loadingTask.promise.then(function (pdf) {
       // Fetch the first page (you can iterate over all pages if needed)
