@@ -472,13 +472,15 @@ html.no-csstransitions .home-content__main {
 .fade-in {
     opacity: 1;
 }
-
-
+#pl-custom-6{
+    display: block;
+    padding-left: 0rem;
+ } 
 @media (min-width: 1200px) {
-  .pl-custom-6{
+ #pl-custom-6{
     display: block;
       padding-left: 4.45rem;
-  } 
+  }  
 }
 /* ===================================================================
  * # Why Us
